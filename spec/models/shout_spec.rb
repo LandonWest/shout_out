@@ -16,7 +16,7 @@ RSpec.describe Shout, :type => :model do
     end
   end
 
-  describe '.by_time', :focus do
+  describe '.by_time' do
     before do
       create(:shout, created_at: DateTime.new(2014,6,24))
       create(:shout, created_at: DateTime.new(2014,6,20))

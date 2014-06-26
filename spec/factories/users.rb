@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :user do
-    first_name "MyString"
-    last_name "MyString"
-    mood "MyString"
+    first_name { Faker::Name.first_name }
+    last_name { Faker::Name.last_name }
+    mood { ['pissed', 'happy', 'sad'].sample }
   end
 end
